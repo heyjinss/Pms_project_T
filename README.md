@@ -22,27 +22,15 @@ css, javascript, html, jsp, spring, mybatis, oracle
 <div>
 </details> 
 
-## 핵심 기술 
+## 핵심기술 
 <details>
   <summary><b>spring</b><summary>
     <div markdown="1">
       <img src ="https://user-images.githubusercontent.com/75897408/141774019-3ed051a2-81e4-4426-b0dd-46ed51d3144d.JPG">
-      </div>
+      <div>
     </details>
     
-<details>
-  <summary><b>spring</b><summary>
-    <div markdown="1">
-      <img src ="https://user-images.githubusercontent.com/75897408/141774019-3ed051a2-81e4-4426-b0dd-46ed51d3144d.JPG">
-      </div>
-    </details>
-    
-<details>
-  <summary><b>spring</b><summary>
-    <div markdown="1">
-      <img src ="https://user-images.githubusercontent.com/75897408/141774019-3ed051a2-81e4-4426-b0dd-46ed51d3144d.JPG">
-      </div>
-    </details>    
+
 ## ERD  
 <details>
 <summary><b>상세</b></summary>
