@@ -12,7 +12,7 @@ last_Teamproject_Ssangyong_team2
 > 4명 (유혜진, 김지은, 김다은, 유성근)  
 
 ##사용기술 (끼술스택)
-<img src = "https://github.com/heyjinss/Pms_project_T/issues/2#issue-1052673067" width ="500" height="100">
+<img src = "https://github.com/heyjinss/Pms_project_T/issues/2#issue-1052673067" width ="100%" height="50%">
 
 ##ERD
 <img src = "https://user-images.githubusercontent.com/75897408/141643981-35e1b6e6-54b9-4027-bced-069cab66150e.JPG" width ="500" height="100">
