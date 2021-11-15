@@ -20,10 +20,14 @@ css, javascript, html, jsp, spring, mybatis, oracle
 <div markdown="1">
 <img src = "https://user-images.githubusercontent.com/75897408/141770093-2c241771-59f9-462b-8a7a-7800d2a3960f.png" width ="100%" height="50%">
 <div>
-</detail> 
+</details> 
 
 ## ERD  
+<details>
+<summary><b>상세</b></summary>
 <img src = "https://user-images.githubusercontent.com/75897408/141643981-35e1b6e6-54b9-4027-bced-069cab66150e.JPG" width ="100%" height="50%">
+<div>
+</details> 
 
 ## 핵심기능(코드로보여주거나 링크)
 -fullcalender</br>
