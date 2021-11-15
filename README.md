@@ -2,21 +2,27 @@
 last_Teamproject_Ssangyong_team2
 
 ## ONBIZ[Pms_project] 
->기업에서 활용하기 위한 프로젝트 관리 서비스이며 대시보드, 범위관리, 일정관리, 이슈관리, 의사소통관리, 
-자원관리 등의 기능을 포함합니다. 
+>기업에서 활용하기 위한 프로젝트 관리 서비스이며 대시보드, 범위관리, 일정관리, 이슈관리, 의사소통관리, 자원관리 등의 기능을 포함합니다. 
 
 ## 데모 링크
 > 아직 준비되지 않음 
 
 ## 제작기간 
->
+> 2021.09.24 ~ 2021.10.22 
+
 ## 참여인원
 > 4명 (유혜진, 김지은, 김다은, 유성근)  
 
-##사용기술
+## 사용기술
+css, javascript, html, jsp, spring, mybatis, oracle
+<details>
+<summary><b>상세</b></summary>
+<div markdown="1">
 <img src = "https://user-images.githubusercontent.com/75897408/141770093-2c241771-59f9-462b-8a7a-7800d2a3960f.png" width ="100%" height="50%">
+<div>
+</detail> 
 
-##ERD
+## ERD  
 <img src = "https://user-images.githubusercontent.com/75897408/141643981-35e1b6e6-54b9-4027-bced-069cab66150e.JPG" width ="100%" height="50%">
 
 ## 핵심기능(코드로보여주거나 링크)
