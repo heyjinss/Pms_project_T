@@ -16,7 +16,7 @@ last_Teamproject_Ssangyong_team2
 
 ##ERD
 <img src = "https://github.com/heyjinss/Pms_project_T/issues/1#issue-1052672322 " width ="500" height="100">
-
+![PMS_projcect_물리ERD](https://user-images.githubusercontent.com/75897408/141643981-35e1b6e6-54b9-4027-bced-069cab66150e.JPG)
 ##핵심기능(코드로보여주거나 링크)
 -fullcalender</br>
 -gantchart</br>
