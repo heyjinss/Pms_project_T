@@ -24,12 +24,23 @@ css, javascript, html, jsp, spring, mybatis, oracle
 
 ## 핵심기술 
 <details>
-  <summary><b>spring</b><summary>
-    <div markdown="1">
-      <img src ="https://user-images.githubusercontent.com/75897408/141774019-3ed051a2-81e4-4426-b0dd-46ed51d3144d.JPG">
-      <div>
-    </details>
-    
+<summary><b>spring</b></summary>
+<div markdown="1">
+<img src = "https://user-images.githubusercontent.com/75897408/141774019-3ed051a2-81e4-4426-b0dd-46ed51d3144d.JPG" width ="100%" height="50%">
+<div>
+</details> 
+<details>
+<summary><b>mybatis</b></summary>
+<div markdown="1">
+<img src = "https://user-images.githubusercontent.com/75897408/141776726-54729ef5-a9db-46c0-9bcd-c946f8806f02.png" width ="100%" height="50%">
+<div>
+</details> 
+<details>
+<summary><b>ajax/jquery</b></summary>
+<div markdown="1">
+<img src = "https://user-images.githubusercontent.com/75897408/141777013-b916fedb-4ded-4da2-92cb-727bd37fd924.JPG" width ="100%" height="50%">
+<div>
+</details> 
 
 ## ERD  
 <details>
@@ -40,16 +51,43 @@ css, javascript, html, jsp, spring, mybatis, oracle
 
   
 ## 핵심기능(코드로보여주거나 링크)
--fullcalender</br>
+<details>
+<summary><b>fullcalendar</b></summary>
+<div markdown="1">
+<img src = "https://user-images.githubusercontent.com/75897408/141777013-b916fedb-4ded-4da2-92cb-727bd37fd924.JPG" width ="100%" height="50%">
+<div>
+</details>
+  
+ <details>
+<summary><b>downloadviewer</b></summary>
+<div markdown="1">
+<img src = "https://user-images.githubusercontent.com/75897408/141777755-8b943ec2-aa48-43f4-857b-62629c389d21.JPG" width ="100%" height="50%">
+ <img src = " https://user-images.githubusercontent.com/75897408/141777744-82f28bfb-34ce-43f2-9485-23719b7cfe8d.JPG" width ="100%" height="50%">
+<div>
+</details>
+  
+ <details>
+<summary><b>multipart</b></summary>
+<div markdown="1">
+<img src = "https://user-images.githubusercontent.com/75897408/141778036-eb444f35-91e2-4847-bbe4-9d5ae909e0bf.JPG" width ="100%" height="50%">
+<img src = "https://user-images.githubusercontent.com/75897408/141778032-6c21db7a-eaff-4295-9b4b-1e65ca780bee.JPG" width ="100%" height="50%">
+<div>
+</details>
+  
 -gantchart</br>
 -mail</br>
 -chat</br>
 -chart.js</br>
 
 ## 구현기능 
--프로젝트 관리(등록/상세/멤버수정/삭제/신규등록) </br>
+-프로젝트 관리(등록/상세/멤버수정/삭제/신규등록) 
+<img src = "https://user-images.githubusercontent.com/75897408/141779352-cf3ca26e-7370-4c4b-a90d-121b1c024ee5.JPG"></br>
 -대시보드 (통계 정보) </br>
+<img src = "https://user-images.githubusercontent.com/75897408/141779345-f0b423a2-97b7-4af5-9475-a0761f318998.JPG" width ="100%" height="50%"></br>
 -리스크관리 (리스크 등록, 수정, 삭제, 댓글, 페이징)</br>
+<img src = "https://user-images.githubusercontent.com/75897408/141779353-b5eacb7b-fcf0-4fc7-9c9d-01093380de48.JPG" width ="100%" height="50%"></br>
+-일정관리 
+<img src = "https://user-images.githubusercontent.com/75897408/141779356-576fe890-e262-4e6f-9a61-73f8b6e061c7.JPG" width ="100%" height="50%"></br>  
 
 
 
