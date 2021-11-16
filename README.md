@@ -4,8 +4,9 @@ last_Teamproject_Ssangyong_team2
 ## ONBIZ[Pms_project] 
 >기업에서 활용하기 위한 프로젝트 관리 서비스이며 대시보드, 범위관리, 일정관리, 이슈관리, 의사소통관리, 자원관리 등의 기능을 포함합니다. 
 
-## 데모 링크
-> 아직 준비되지 않음 
+## 프로젝트 선택의 이유 
+>이 프로젝트는 프로젝트 관리시스템 (Project Manage System) 으로 제가 개발을 처음 시작하며 고민하게 된 프로그램과 가까운 시스템이었습니다. 프로젝트의 정량적인 성과와 진행지표를 체계적으로 사용자들이 알 수 있도록 지원하는 프로그램으로서 다양한 권한 설정, 결제체계, 일정관리,리스크 관리 등 업무에 관련된 프로세스가 포함되어있는 시스템이었기에 무엇보다 기대되었습니다.
+물론 팀 내에서 사용할 서비스이기 때문에 기획의 방향이 조금은 달랐지만 만들고 싶던 회사업무의 서비스를 구현해볼 수 있어서 굉장히 설렌 마음으로 시작했습니다.
 
 ## 제작기간 
 > 2021.09.24 ~ 2021.10.22 
@@ -18,6 +19,8 @@ css, javascript, html, jsp, spring, mybatis, oracle
 <details>
 <summary><b>상세</b></summary>
 <div markdown="1">
+주어진 개발 스펙은 ajax, jquery, java script등 평소 익숙해진 문법을 활용하되, BackEnd에 조금 더 시간을 할애하여 개발할 수 있도록 Spring 과 Mybatis를 사용하여 프로세스에 더 집중하고자 개발방향을 잡게되었습니다. 또한 배포를 위해 SVN을 활용하여 팀원들과 Commit을 진행하였습니다. 
+java,spring,gradle 등 완전하진 않지만 최적화된 기술을 사용하여 백엔드기술에 온전히 집중할 수 있었습니다. 동적 데이터 처리부분이 많기 때문에 javascript와 ajax의 사용도가 예상만큼 높았습니다.
 <img src = "https://user-images.githubusercontent.com/75897408/141770093-2c241771-59f9-462b-8a7a-7800d2a3960f.png" width ="100%" height="50%">
 <div>
 </details> 
@@ -89,12 +92,194 @@ css, javascript, html, jsp, spring, mybatis, oracle
 -일정관리 
 <img src = "https://user-images.githubusercontent.com/75897408/141779356-576fe890-e262-4e6f-9a61-73f8b6e061c7.JPG" width ="100%" height="50%"></br>  
 
+## 📌프로젝트를 시작하기 전 저의 목표 
+- **팀 원간 정보공유 체계 확보**
+      이전보다 더 효율적이고 획일적으로 코드를 공유하고 이해할 수 있도록 정보의 공유체계를 
+      주도적으로 확보해보겠다고 다짐했습니다.
 
+- **다각적 권한 설정 및 jstl의 사용**
+     javascript와 세션 및 jstl 구문을 사용하여 권한설정에 있어 다각적으로 활용해보고자 다짐했습
+    니다. 동적으로 데이터를 다루는 방식의 변화를 주고자 목표를 설정했습니다.
+    
+- **데이터의 체계적 정규화**
+      이전부터 지속적으로 팀원들과 설계해온 경험을 바탕으로 주도적으로 ERD를 체계적으로 정규화   
+      하여 쿼리를 효율적으로 작성하고 속도를 높이는 훈련을 하고 싶었습니다.
 
-## 트러블슈팅경험/자랑하고싶은코드
--이슈사항 : 오류에 따른 일정 지연 현상 및 데이터 변경으로 인한 소통 부재  </br>
--일정 담당자로서 간트 차트를 엑셀파일로 구현하여 세부적으로 구현 기능을 분리하고 순서와 연관관계 별로 정렬하여 팀원들이 한눈에 진행도를 파악하고 수정할 수 있도록 일정관리에 노력을 기하였습니다. 또한 오류로그와 이슈사항을 미리 적어 놓도록 하여 데이터 변경사항이나 오류 사항이 있을 시 문서에 기록하여 다시 한번 미리 확인하고 이슈 사항을 미리 반영할 수 있도록 조치하였습니다.
+## 이슈관리 
+개발기간은  21년 9월 17일부터 21년 10월 26일까지였으나 10월 22일부터는 통합테스트 기간이었고 설계과정도 약 10일정도 할애가 되기때문에,17일까지는 개발이 완성되어야 했습니다. 약 20일 (3주)의 시간에 개발이 진행되었습니다.
+범위관리, 자원관리, 일정관리, 이슈관리, 통합관리,의사소통관리까지 마무리하기에는 조금은 벅찰 것으로 예상되었기에 프로젝트에서 가장 중요한 것은 소통의 효율성을 높이고 촘촘한 설계로 변동을 최대한 줄이는 방향이었습니다. 
+또한 일정관리를 바탕으로 팀원 간 구현 기능을 검토하며 완성도를 높이는 작업이 요구되었습니다. 
 
+- 간트차트를 통한 일정공유 매개체 만들기
+  📌**해결방안 :** 이전 프로젝트에서는 팀원 간 전체 일정을 노션에 공유하여 진행도를 파악할 수 있었지만, 상세 진행도를 파악하고 현실적으로 구현할 수 있는 부분과 없는 부분을 빠르게 파악하여 지속적으로 조정해나갈 수 있도록 최적화하는 노력이 더 필요했습니다. 따라서 저는 팀원들이 '한눈에' 서로의 진행도를 파악하고, 진행의 속도를 맞추어갈 수 있도록 간트차트를 구현하여 일정을 협업의 형태로 관리할 수 있도록 했습니다. 
+ 📌**효과:** 팀 내에서 각자 맡은 역할은 데이터의 흐름이 얽혀있기 때문에 서로의 속도를 맞추어 가며 조정하는 것이 중요했는데, 간트차트를 통해 서로의 진행 흐름을 파악하여 '이때까지 완료 가능할까요?'라고 서로 조정해나가며 구현에 집중할 수 있었습니다. 
+  ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a418695b-d6ff-40bc-a59e-960cd91e5386/Untitled.png) 
+- 오류관리, 이슈사항 공유 매개체 설정
+ 📌 **해결방안:** 개발기간동안 설계과정에서 짜놓았다고 할지라도 데이터의 변동사항은 지속적으로 생기는 문제를 경험했습니다. 따라서 이번 프로젝트에서는 변경사항이 빠르게 반영되어 오류를 최소화할 수 있도록 변경사항 로그에 작성하도록 하였고, 오류로그에 자신이 경험한 로그를 작성하여 같은 문제 발생 시 시간을 할애하지않고 서로 도움을 줄 수 있도록 작성했습니다. 
+ 📌**효과:** 오류를 경험했을 때 실제로 로그에 기록하며 해결방식을 작성하고 같은 오류 발생 시 개인적으로 참고하여 빠르게 공유하거나, DB로그 오류 시 모든 팀원이 같은 오류를 겪어 빠르게 해결해나갔습니다.
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/41a3da43-2aff-4e71-9c79-901551633902/Untitled.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/13c8ed94-020d-40c8-b44c-83121d3b5b8e/Untitled.png)
+- 코드컨벤션 진행을 통한 가독성 향상
+📌 파스칼 표기법 : 을 통해 vo명과 mapper명을 통일하여 가독성을 향상하였고, onbiz라는 프로젝트 웹 서비스의 명을 따서 On을 반드시 표기하도록 하였음 
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/84d18f38-7dbf-4683-b58f-3c82106caeaf/Untitled.png)
+📌 파스칼 표기법 : 파스칼표기법을 통해 엔터티명을 작성하였고 속성명의 경우 스네이크 표기법을
+ 활용하여 작성하여 통일성을 높이고자 했습니다. 속성명의 경우 명사를 중심으로 작성하여 정확성을 높이고자 하였고 길어지는 구문의 경우 최대한 모르는 사람이 보아도 알아볼 수 있도록 작성하다보니 길어졌지만 가독성은 높이는 방향으로 합의했습니다. date의 경우 dte로 적어놓아 코드명은 약속된약어로 쓰도록 노력했습니다.  
+ ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c3ab31e2-d96d-4a07-873f-dedd60a9bd0a/Untitled.png)
+  
+## 트러블슈팅경험/자랑하고싶은코드 (문제 정의, 사실 정리, 원인 추론, 조치 및 방안 검토, 해결 과정)
+- 댓글 처리 시 로그인 세션 값(사원번호)를 호출하여 댓글 작성자 번호와 비교 하여 맞을 경우 [삭제버튼]할당하여 권한처리를 시도하였으나 비교 불가
+    문제 : javascript에서 ajax로 댓글 
+    해결 : JSTL을  문법을 통해 동적으로 처리되는 데이터 권한 설정 
+<details>
+<summary><b>상세</b></summary>
+<div markdown="1">
+    ```jsx
+    <c:forEach items="${command}" var="command">
+    							<tr>
+    								<td>조치일 | <fmt:formatDate pattern="yyyy/MM/dd"
+    										value="${command.risk_commanddate}" /> 조치자 | ${command.emp_no}
+    									<c:set var="pass" value="${command.emp_no}" /> 
+    									<c:set var="emp_no" value="${sessionEmpNo}" /> 
+    									<c:if test="${pass eq emp_no}">
+                         						<a id="dela" onclick="delB()"; ><strong>삭제</strong></a>
+    									</c:if> <input type="hidden" class="num" value="${command.risk_commandnum}" />
+    								</td>
+    							<tr>
+    								<td><textarea class="form-control textaread " readonly>${command.risk_command}</textarea></td>
+    							</tr>
+    							<input class="name" type="hidden" value="${command.emp_no}">
+    						</c:forEach>
+    ```
+   <div>
+   <details>
+- 프로젝트에 대한 DB접근을 최소화하여 한 쿼리에서 작성하고자 하였음
+    
+  <details>
+<summary><b>상세</b></summary>
+<div markdown="1">  
+    ```jsx
+    <select id = "getprojectst" resultType ="ondashboard">
+    	<![CDATA[
+    	SELECT a.pro_name , count(task_no) AS tot, b.task2
+    	FROM (SELECT o2.TASK_NO, b.pro_no, b.mem_no, b.pro_name
+    	FROM ONTASK o2, 
+    	(SELECT o.pro_no ,o.pro_name, om.mem_no 
+    	FROM ONPROJECT o, ONPROJECT_MEMBER om 
+    	WHERE o.PRO_NO = om.PRO_NO) b  
+    	WHERE o2.MEM_NO  = b.mem_no) a,
+    	(SELECT a.pro_name , count(no2) AS task2
+    	FROM (SELECT o2.task_no AS no2, b.pro_no, b.mem_no , b.pro_name
+    	FROM ONTASK o2, 
+    	(SELECT o.PRO_NO ,o.pro_name, om.mem_no 
+    	FROM ONPROJECT o, ONPROJECT_MEMBER om 
+    	WHERE o.pro_no = om.pro_no) b  
+    	WHERE o2.mem_no  = b.mem_no
+    	AND o2.task_state = '진행중') a
+    	GROUP BY a.pro_name) b
+    	WHERE a.pro_name = b.pro_name
+    	GROUP BY a.pro_name , b.task2
+        ]]>
+    	</select>
+    ```
+  <div>
+  <details>
+    
+- 로그인 controller에서 return url 문제로 넘어가지 않는 현상
+<details>
+<summary><b>상세</b></summary>
+<div markdown="1">    
+    ```jsx
+    <script type="text/javascript">
+    
+    	
+    	var login_auth = "${login.auth_no}";
+    	
+    	// 로그인 권한이 있는지 확인, 로그인이 제대로 되었는지 확인
+    	if(login_auth != null) {
+    		location.href = "${path}/dash.do";
+    	} else {
+    		alert("로그인을 다시 해주세요!");
+    	}
+    	
+    	
+    </script>
+    ```
+    
+    ```jsx
+    //login담당자 코드 
+    // 로그인 체크
+        // http://localhost:7080/onbiz/loginCheck.do
+        @RequestMapping("loginCheck.do")
+        public String loginCheck(@ModelAttribute OnEmp onemp, HttpSession session) {
+            String returnURL = "";
+            System.out.println("전달 데이터 확인 : " + onemp);
+            if (session.getAttribute("login") != null) {
+                session.removeAttribute("login"); // 기존 login 세션값 제거
+            }
+            OnEmp vo = service.login(onemp);
+            if (vo != null) {
+                session.setAttribute("login", vo);
+                session.getAttribute("login");
+                returnURL = "OnEmp/Login/LOGIN_SELECT"; //"OnDashBoard/DAS-001-pm" ? 새 페이지 하나 추가해서 설정하는게..
+                System.out.println("onemp 전달 : " + onemp);
+                System.out.println("vo : " + vo);
+                System.out.println("세션 확인 :  " + session);
+            } else {
+                System.out.println("사원번호/비밀번호 불일치");
+                returnURL = "OnEmp/Login/login";
+            }
+            return returnURL;
+        }
+    ```
+    
+    ```jsx
+    @RequestMapping("dash.do")
+      public String dash(@ModelAttribute("login") OnEmp login, Model d) {
+        d.addAttribute("projectlist", service.getProject());
+        d.addAttribute("projectst",service.getprojectst());
+        d.addAttribute("procnt",service.getProjectCnt());
+        d.addAttribute("riskcnt",service.getRiskCnt());
+        d.addAttribute("taskcnt",service.getTaskCnt());
+        d.addAttribute("nprocnt",service.getnProjectCnt());
+        d.addAttribute("riskst", service.getristst());
+        d.addAttribute("risktab", service.getrisklist());
+        d.addAttribute("dproject", service.dproject());
+        //=====================================================bar chart
+        d.addAttribute("graph_complete",service.graphcomplete());
+        d.addAttribute("graph_delay",service.graphdelay());
+        d.addAttribute("graph_graphgoing",service.graphgoing());
+        d.addAttribute("graph_ready",service.graphready());
+        
+        String returnURL = "";
+        String loginInfo = login.getAuth_no();
+        System.out.println(loginInfo);
+        //pm대시보드 이동 
+        if(loginInfo.equals("a01")) {
+          returnURL = "OnDashBoard/DAS-001-pm";
+        }
+        //tm대시보드 이동 
+        if(loginInfo.equals("a02")) {
+          returnURL = "OnDashBoard/DAS-001-TM";
+        }
+        //hr대시보드 이동 
+        if(loginInfo.equals("a03")) {
+          returnURL = "OnDashBoard/DAS-001-HR";
+        }
+        //ceo대시보드 이동
+        if(loginInfo.equals("a04")) {
+          returnURL = "OnDashBoard/DAS-001-CEO";
+        }
+        return returnURL;
+      }
+    ```
+    <div>
+    <details>
+-
 
 ## 회고/느낀점 
--협업을 위해서 즉각적인 문서 및 오류공유를 위한 환경을 구축하면서 최적화과정을 이루어가는 일이 팀의 협업 효율을 이끌어 낼 수 있다는 것을 다시한번 알게 되었고, 정규화 된 데이터를 조인하여 통계를 내는 과정에서 sql에 대해서 재미를 느끼고 데이터관리 및 오류를 경험하면서 데이터 설계과정에 대해 직접적으로 고민해볼 수 있었습니다. 
+-협업을 위해서 즉각적인 문서 및 오류공유를 위한 환경을 구축하면서 최적화과정을 이루어가는 일이 팀의 협업 효율을 이끌어 낼 수 있다는 것을 다시한번 알게 되었고, 정규화 된 데이터를 조인하여     통계를 내는 과정에서 sql에 대해서 재미를 느끼고 데이터관리 및 오류를 경험하면서 데이터 설계과정에 대해 직접적으로 고민해볼 수 있었습니다. 
+- 팀 내의 다른 팀원들보다 코딩공부를 늦게 시작해 오류를 마주하는 일이 많아 속도가 개인적으로 늦었을때가 많았습니다. 그러나 마지막 프로젝트가 되었을때는 다양한 오류를 팀원들이 공유할 때 침   착하게 제가 알려줄 수 있는 것들이 많았습니다. 개발은 오류를 마주하고 익숙해지는 과정속에서 역량이 늘어갈 수 있다고 생각합니다.
+- 또한 한정된 일정 속에서 포기하려는 팀원도 있었지만, 서로의 한계를 공유하고 코드를 공유하고, 대신 방안을 찾아가며 끝까지 결과물을 완성할 수 있었습니다. 함께할 때 더 좋은 성과물이 나올 수   있다고 생각합니다.
+- 설계가 항상 완벽할 수 없었습니다. 변화하는 개발과정 속에서 소통의 최적화 과정을 찾아가고 유연한 사고로 조정해가는 것이 필요하다고 생각합니다. 그 과정에서 효율을 빠르게 찾아가기 위해 
+  코드컨벤션을 통한 코드표기법, 코드로 소통하는 법을 끊임없이 배워야 겠다고 생각할 수 있는 프로젝트 였습니다. 
+
