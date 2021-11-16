@@ -2,6 +2,10 @@
 	pageEncoding="UTF-8" import="java.util.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
+
+
 <c:set var="path" value="${pageContext.request.contextPath}" />
 <fmt:requestEncoding value="utf-8" />
 <!DOCTYPE html>
@@ -27,6 +31,7 @@
 <link rel="stylesheet" href="${path}/settings/bootstrap.min.css">
 <script type="text/javascript">
 					$(document).ready(function() {
+						$(".title").text("<spring:message code='login'/>");
 						$("form").submit(function(){
 							var id = $("[name=emp_no]").val();
 							var pass =$("[name=emp_pass]").val();
@@ -43,12 +48,27 @@
 							 document.user.action="${path}/loginCheck.do";
 						});
 					});
+					
+					$(document).ready(function(){
+						$("h2").text("<spring:message code='multilang'/>");
+						var lang="${param.lang}";
+						$("#selectLan").val(lang);
+						$("#selectLan").change(function(){
+							if( $(this).val()!=""){
+								$(location).attr("href","${path}/choiceLan.do?lang="+$(this).val());
+							}
+						});
+					});
 </script>
 </head>
 <style>
 
 body { font-family: 'Open Sans', Arial, Helvetica, sans-serif;}
+.form-control-sm {
+margin-top:10px;
+text-align:center;
 
+}
 </style>
 <body class="bg-gray-900">
 
@@ -64,26 +84,36 @@ body { font-family: 'Open Sans', Arial, Helvetica, sans-serif;}
                             <div class="col-lg-12 col-md-12">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">OnBiz 회원 로그인</h1>
+                   <!--  로그인 화면  -->
+                                    	<h1>ONBIZ</h1>
+                                        <h1 class="h4 text-gray-900 mb-4 title">OnBiz <spring:message code = "member"/> <spring:message code ="login"/></h1>
                                     </div>
                                     <form class="user" name="user" method="post"> <!-- 액션 넣기? action="${path}/login.do"-->
                                         <div class="form-group">
+			     	<!-- 내용 입력란  -->
                                             <input type="text" class="form-control form-control-user"
-                                                name="emp_no" id="exampleInputEmail" placeholder="사원번호" value="">
+                                                name="emp_no" id="exampleInputEmail" placeholder="<spring:message code="id"/>" value="">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                               name="emp_pass" id="exampleInputPassword" placeholder="비밀번호"  value="">
+                                               name="emp_pass" id="exampleInputPassword" placeholder="<spring:message code="pwd"/>"  value="">
                                         </div>
                                         <button class="btn btn-primary btn-user btn-block" type="submit">
-                                            로그인
+                                          <spring:message code="login"/>
                                     	</button>
+	               <!-- 언어 선택 -->                   
+                                    	<select class="form-control form-control-sm" id="selectLan">
+  										<option value="" ><spring:message code="chlang"/></option>
+  										<option value="ko" ><spring:message code="ko"/></option>
+  										<option value="en" ><spring:message code="en"/></option>
+  										</select>
+                   <!-- 하단 전화안내 -->                    	
                                     </form>
                                     <hr>
-                                    <div class="bottomText text-center">로그인 문의<br>인사팀 02-350-7533<br><br>
-                                    	<span>[PM] 이정호 -ID: 1001 -PW: zip1234<br></span>
-                                    	<span>[TM] 이하윤 -ID: 1003 -PW: 52522013<br></span>
-                                    	<span>[HR] 김서연 -ID: 1002 -PW: tjdnf12<br></span>
+                                    <div class="bottomText text-center"><spring:message code ="contact"/>
+                                     <br><spring:message code  ="memberteam"/> 02-350-7533<br><br>
+                                     <br><h6><spring:message code ="info"/></h6>
+               
                                     </div>
                                 </div>
                             </div>

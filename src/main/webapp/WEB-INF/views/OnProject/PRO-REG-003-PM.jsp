@@ -74,9 +74,9 @@ font-size:11px;
 			//	console.log(pro_name);
 					$.ajax({
 						type:"get",
-						url:"${path}/projectlistajax.do?pro_state="+pro_state+"&emp_no="+sessionEmpNo,//+"&pro_name="+pro_name,//+"&pro_kind="+pro_kind
+						url:"${path}/projectlistajax.do?pro_state="+pro_state+"&emp_no="+sessionEmpNo,			
 						//async:false,
-						data:pro_state,sessionEmpNo,//,pro_kind,pro_name
+						data:pro_state,sessionEmpNo,
 						dataType:"json",
 						success:function(data){
 							var list = data.projectlist;

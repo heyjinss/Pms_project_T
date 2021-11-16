@@ -1,8 +1,9 @@
 package onbiz.controller;
 
 import java.util.ArrayList;
-
+import java.util.Locale;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +14,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
-
-
+import org.springframework.web.servlet.LocaleResolver;
 import onbiz.service.OnEmpServ;
 import onbiz.vo.OnEmp;
 
@@ -26,7 +26,10 @@ public class OnEmpCtrl {
 	
 	@Autowired
 	private OnEmpServ service;
-
+	
+	@Autowired(required = false)
+    private LocaleResolver localResolver;
+    
 	private HttpServletRequest request;
 
 	@ModelAttribute("onemp")
@@ -35,13 +38,27 @@ public class OnEmpCtrl {
 	}
 
 	// http://localhost:7080/onbiz/login.do
-	@RequestMapping("login.do")
+	@RequestMapping("login2.do")
 	public String login(OnEmp onemp, HttpSession session) throws Exception {
 		System.out.println("login 메서드 확인 - 컨트롤러 -");
-
 		System.out.println("전달 데이터 확인 : " + onemp);
 		return "OnEmp/Login/login";
 	}
+	
+	// http://localhost:7080/onbiz/choiceLan.do
+	@RequestMapping("/choiceLan.do")
+    public String choice(@RequestParam("lang") String lang,OnEmp onemp, HttpSession session,
+            HttpServletRequest request, HttpServletResponse response) throws Exception {
+        System.out.println("선택한 언어:"+lang);
+        System.out.println("전달 데이터 확인 : " + onemp);
+        // 해당되는 선택 언어가 message폴드 하위에 있는 다국어 선택 파일을 
+        // 지정해서, 해당 위치/시간에 해당하는 언어가 나오게 된다.
+        Locale locale = new Locale(lang);
+        localResolver.setLocale(request,response, locale);
+        return "OnEmp/Login/login";
+    }   
+	
+	
 
 	// 로그인 체크
 	// http://localhost:7080/onbiz/loginCheck.do

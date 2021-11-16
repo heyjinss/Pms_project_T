@@ -28,8 +28,7 @@
 <script src="${path}/settings/bootstrap.min3.js"></script>
 </head>
 <script type="text/javascript">
-
-	
+	//권한 확인용
 	var login_auth = "${login.auth_no}";
 	
 	// 로그인 권한이 있는지 확인, 로그인이 제대로 되었는지 확인
