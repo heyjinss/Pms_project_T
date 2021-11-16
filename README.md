@@ -1,6 +1,5 @@
 # Pms_project_T
-last_Teamproject_Ssangyong_team2
-<img src = "https://user-images.githubusercontent.com/75897408/141985754-a5cefca5-64d1-48b3-bc01-1c6021ab4343.png" width ="100%" height = "400">
+![커버](https://user-images.githubusercontent.com/75897408/141992339-f92373b2-9994-4bd0-85f4-7c1b5b7af202.JPG)
 
 ## ONBIZ[Pms_project] 
 >기업에서 활용하기 위한 프로젝트 관리 서비스이며 대시보드, 범위관리, 일정관리, 이슈관리, 의사소통관리, 자원관리 등의 기능을 포함합니다. 
@@ -8,8 +7,13 @@ last_Teamproject_Ssangyong_team2
 <summary><b>상세 분석표 보기</b></summary>
 <div markdown="1">
 <img src = "https://user-images.githubusercontent.com/75897408/141984900-87656954-50c2-4655-b0c1-bc8168cfd066.JPG">
+<div>
+</details> 
+  
+<details>
+<summary><b>권한 보기</b></summary>
+<div markdown="1">
 <img src = "https://user-images.githubusercontent.com/75897408/141984907-e8c9ec7e-c00e-4920-a195-3b2cc7c40472.JPG">
-
 <div>
 </details> 
   
