@@ -1,11 +1,20 @@
 # Pms_project_T
 last_Teamproject_Ssangyong_team2
+<img src = "https://user-images.githubusercontent.com/75897408/141985754-a5cefca5-64d1-48b3-bc01-1c6021ab4343.png" width ="100%" height = "400">
 
 ## ONBIZ[Pms_project] 
 >기업에서 활용하기 위한 프로젝트 관리 서비스이며 대시보드, 범위관리, 일정관리, 이슈관리, 의사소통관리, 자원관리 등의 기능을 포함합니다. 
+<details>
+<summary><b>상세 분석표 보기</b></summary>
+<div markdown="1">
+<img src = "https://user-images.githubusercontent.com/75897408/141984900-87656954-50c2-4655-b0c1-bc8168cfd066.JPG">
+<img src = "https://user-images.githubusercontent.com/75897408/141984907-e8c9ec7e-c00e-4920-a195-3b2cc7c40472.JPG">
 
+<div>
+</details> 
+  
 ## 프로젝트 선택의 이유 
->이 프로젝트는 프로젝트 관리시스템 (Project Manage System) 으로 제가 개발을 처음 시작하며 고민하게 된 프로그램과 가까운 시스템이었습니다. 프로젝트의 정량적인 성과와 진행지표를 체계적으로 사용자들이 알 수 있도록 지원하는 프로그램으로서 다양한 권한 설정, 결제체계, 일정관리,리스크 관리 등 업무에 관련된 프로세스가 포함되어있는 시스템이었기에 무엇보다 기대되었습니다.
+이 프로젝트는 프로젝트 관리시스템 (Project Manage System) 으로 제가 개발을 처음 시작하며 고민하게 된 프로그램과 가까운 시스템이었습니다. 프로젝트의 정량적인 성과와 진행지표를 체계적으로 사용자들이 알 수 있도록 지원하는 프로그램으로서 다양한 권한 설정, 결제체계, 일정관리,리스크 관리 등 업무에 관련된 프로세스가 포함되어있는 시스템이었기에 무엇보다 기대되었습니다.
 물론 팀 내에서 사용할 서비스이기 때문에 기획의 방향이 조금은 달랐지만 만들고 싶던 회사업무의 서비스를 구현해볼 수 있어서 굉장히 설렌 마음으로 시작했습니다.
 
 ## 제작기간 
@@ -20,7 +29,8 @@ css, javascript, html, jsp, spring, mybatis, oracle
 <summary><b>상세</b></summary>
 <div markdown="1">
 주어진 개발 스펙은 ajax, jquery, java script등 평소 익숙해진 문법을 활용하되, BackEnd에 조금 더 시간을 할애하여 개발할 수 있도록 Spring 과 Mybatis를 사용하여 프로세스에 더 집중하고자 개발방향을 잡게되었습니다. 또한 배포를 위해 SVN을 활용하여 팀원들과 Commit을 진행하였습니다. 
-java,spring,gradle 등 완전하진 않지만 최적화된 기술을 사용하여 백엔드기술에 온전히 집중할 수 있었습니다. 동적 데이터 처리부분이 많기 때문에 javascript와 ajax의 사용도가 예상만큼 높았습니다.
+java,spring,gradle 등 완전하진 않지만 최적화된 기술을 사용하여 백엔드기술에 온전히 집중할 수 있었습니다. 동적 데이터 처리부분이 많기 때문에 javascript와 ajax의 사용도가 예상만큼 높았습니다. 
+ *하단의 이미지는 제가 활용할 수 있는 기술과 정도를 나타낸 지표입니다.
 <img src = "https://user-images.githubusercontent.com/75897408/141770093-2c241771-59f9-462b-8a7a-7800d2a3960f.png" width ="100%" height="50%">
 <div>
 </details> 
@@ -88,6 +98,9 @@ java,spring,gradle 등 완전하진 않지만 최적화된 기술을 사용하�
 - **프로젝트관리 기능**(파일업로드, 검색)
 - **리스크관리** 기능(권한 설정/댓글/수정/등록/삭제/검색/다운로드)
 - **일정관리기능** (fullcalendar를 이용한 기술/일정수정/삭제/조회/색상변경/상세등록)
+- 이외의 기능은 다른 조원들이 맡았습니다.
+  (간트차트, 작업관리, 결제관리, 사원관리, 의사소통관리) 
+<hr>
 -프로젝트 관리(등록/상세/멤버수정/삭제/신규등록) 
 <img src = "https://user-images.githubusercontent.com/75897408/141779352-cf3ca26e-7370-4c4b-a90d-121b1c024ee5.JPG"></br>
 -대시보드 (통계 정보) </br>
